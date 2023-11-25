@@ -7,6 +7,11 @@
 
 [点击此处访问官网查看更多内容](https://web.xmoj-bbs.tech)
 
+原项目: https://github.com/langningchen/XMOJ-Script
+
+### 帮助文档
+地址：https://docs.xmoj-bbs.tech
+仓库：https://github.com/XMOJ-Script-dev/docs
 
 ### 介绍
 
@@ -48,33 +53,20 @@
 - **修复登录后跳转失败**：解决登录后跳转问题，确保用户能够顺利进入下一步操作。
 - **下载页面增加内容**：在下载页面增加更多内容，提供更多资源下载。
 - **比较代码**：允许用户比较不同版本的代码，方便进行代码对比与分析。
-- ~**学术模式**：开启学术模式，体验极致的学习环境！（此功能开发中，很快将会发布）~
+- **学术模式**：开启学术模式，体验极致的学习环境！（此功能部分开发中）
 
-![](Image/01.png)
-![](Image/02.png)
-![](Image/03.png)
-![](Image/04.png)
-![](Image/05.png)
-![](Image/06.png)
-![](Image/07.png)
-![](Image/08.png)
-![](Image/09.png)
-![](Image/10.png)
-![](Image/11.png)
-![](Image/12.png)
-![](Image/13.png)
-![](Image/14.png)
-![](Image/15.png)
-![](Image/16.png)
+![](Images/1.png)
+![](Images/2.png)
+更多图片可在[官网](https://www.xmoj-bbs.tech)上查看
 
-通过小明的OJ，您将能够更便捷地参与竞赛，提高AC率，管理代码，优化学习体验，同时享受美化界面带来的愉悦感受。
-无论是竞技还是学习，这个脚本都将成为您在XMOJ平台上的得力助手。
+通过小明的OJ增强脚本，您将能够更便捷地参与竞赛，提高AC率，管理代码，优化学习体验，同时享受美化界面带来的愉悦感受。
+无论是竞技还是学习，这个脚本都将成为您在小明的OJ平台上的得力助手。
 无论您是新手还是经验丰富的竞赛选手，小明的OJ都将为您的比赛体验带来前所未有的便利和效率。
 立即安装并体验吧！
 
 
 ### 安装
-请参考 [官网介绍](https://web.xmoj-bbs.tech) 。
+请参考 [官网介绍](https://www.xmoj-bbs.tech) 。
 
 ### 加入我们
 您想为我们的脚本添砖加瓦吗？快加入我们，为小明的OJ用户创造更美好的环境！（具体要求参见Code Of Conduct）
@@ -82,35 +74,13 @@
 小明的OJ增强脚本开发期待以您的邂逅！
 
 ### 贡献
-请注意, 请将所有 pull request 提交到`dev`分支, 否则他们会被自动关闭。
+请注意, 外部开发者应向`extern-contrib`提交 pull requests。
 
 ### How to set up a development server
-make sure you have `secret.ts` ready, and run:
+In the 'Server/Sources' folder input your GitHub PAT and Cloudflare Turnstile Site key in 'Secrets.ts', and run:
 ```bash
 cd Server
 npm install 
-wrangler d1 execute DB --file ./Source/Initial.sql --local
-wrangler dev
+npx wrangler d1 execute DB --file ./Source/Initial.sql --local
+npx wrangler dev
 ```
-
-### 开发组更换的通知
-
-“人有悲欢离合，月有阴晴圆缺，万事古难全”。在阴雨连绵的2023年十月，随着日本第二次排放福岛核废水，我们开启了开发的交接工作。
-
-何为万事古难全，我想，这恐怕是一次“难全”的事情吧。大家都知道，@chenlangning 是之前脚本的最初开发者和极大贡献者。@zhuchenrui2 是第二位加入脚本开发组的成员，而我则是最后才加入小明的OJ增强脚本开发大业的PM。
-
-毫不夸张地说，我是开发组中能力最差的。
-
-为什么我决定接手这个项目，是因为对这个项目的热爱。举个例子，我在中国某个上GitHub很困难的地方坚持修改脚本到23：34，我想，这应该算是一种坚持。
-
-我想各位看到这些，恐怕和我一样十分悲伤。开发组失去了一位重要的合作方，我的心中也似乎缺了点什么。我相信，脚本的末日不会很快到来。虽然我知道，我最终放弃这个项目不会很晚，但是我想，在我还负责这个项目的时候就把他做到极致。
-
-我忽然想到苏轼的《水调歌头》中还有一句话“但愿人长久，千里共婵娟”。
-
-衷心祝愿@chenlangning 在未来的文化课学习中能取得成功，也祝愿所有的OIers们国庆快乐！
-
-我也期待能在未来把这个项目做的更好，当然这也离不开大家的一贯支持。我愿与各位同学们一起砥砺前行，创造更美好的明天！
-
-同时，我也祝愿各位OIers们中秋快乐！
-
-——写于2023年10月2日

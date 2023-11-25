@@ -59,10 +59,11 @@ console.warn("XMOJ.user.js has been updated.");
 
 execSync("git config --global user.email \"github-actions[bot]@users.noreply.github.com\"");
 execSync("git config --global user.name \"github-actions[bot]\"");
+execSync("git pull");
 execSync("git push origin --delete actions/temp || true");
 execSync("git checkout -b actions/temp");
 execSync("git commit -a -m \"Update to release " + CurrentVersion + "\"");
-execSync("git push -u origin actions/temp");
+execSync("git push -u origin actions/temp -f");
 console.warn("Pushed to actions/temp.");
 
 var PRNumber = execSync("gh pr create --title \"Update to release " + CurrentVersion + "\" --body \"Update to release " + CurrentVersion + "\" --base dev --head actions/temp").toString().split("/")[6].trim();

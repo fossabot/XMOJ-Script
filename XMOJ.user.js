@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         XMOJ
-// @version      1.0.230
+// @version      1.0.245
 // @description  XMOJ增强脚本
 // @author       @XMOJ-Script-dev, @langningchen and the community
 // @namespace    https://github/langningchen
@@ -22,6 +22,7 @@
 // @connect      cppinsights.io
 // @connect      127.0.0.1
 // @license      GPL
+// @icon         data:image/x-icon;base64,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
 // ==/UserScript==
 
 /**
@@ -186,8 +187,8 @@ let GetUsernameHTML = async (Element, Username, Simple = false, Href = "http://w
         if (AdminUserList.includes(Username)) {
             HTMLData += `<span class="badge text-bg-danger ms-2">管理员</span>`;
         }
-        if (Username == "chenlangning") {
-            HTMLData += `<span class="badge text-bg-success ms-2">吉祥物</span>`;
+        if (Username == "chenlangning"){
+            HTMLData += `<span class="badge ms-2" style="background-color: #6633cc; color: #ffffff">吉祥物</span>`;
         }
         let BadgeInfo = await GetUserBadge(Username);
         if (BadgeInfo.Content != "") {
@@ -233,11 +234,7 @@ let TimeToStringTime = (Time) => {
             return Time + "ms";
         } else if (Time < 1000 * 60) {
             return (Time / 1000).toFixed(2) + "s";
-        } else if (Time < 1000 * 60 * 60) {
-            return (Time / 1000 / 60).toFixed(2) + "min";
-        } else {
-            return (Time / 1000 / 60 / 60).toFixed(2) + "h";
-        }
+        } 
     }
     else {
         return Time;
@@ -337,7 +334,7 @@ GM_registerMenuCommand("重置数据", () => {
 });
 
 let SearchParams = new URLSearchParams(location.search);
-let ServerURL = (UtilityEnabled("DebugMode") ? "https://xmoj-script-dev.github.io/XMOJ-Script" : "https://web.xmoj-bbs.tech")
+let ServerURL = (UtilityEnabled("DebugMode") ? "https://ghpages.xmoj-bbs.tech/" : "https://web.xmoj-bbs.tech")
 let CurrentUsername = document.querySelector("#profile").innerText;
 CurrentUsername = CurrentUsername.replaceAll(/[^a-zA-Z0-9]/g, "");
 let IsAdmin = AdminUserList.indexOf(CurrentUsername) !== -1;
@@ -390,7 +387,8 @@ else {
             document.body.innerHTML = String(document.body.innerHTML).replaceAll("小明", "高老师");
             document.body.innerHTML = String(document.body.innerHTML).replaceAll("下海", "上海");
             document.body.innerHTML = String(document.body.innerHTML).replaceAll("海上", "上海");
-            document.body.innerHTML = String(document.body.innerHTML).replaceAll("小红", "低老师");
+            document.body.innerHTML = String(document.body.innerHTML).replaceAll("小红", "徐师娘");
+            document.body.innerHTML = String(document.body.innerHTML).replaceAll("小粉", "彩虹");
             document.body.innerHTML = String(document.body.innerHTML).replaceAll("高老师们", "我们");
             document.body.innerHTML = String(document.body.innerHTML).replaceAll("自高老师", "自我");
             document.title = String(document.title).replaceAll("小明", "高老师");
@@ -777,7 +775,7 @@ else {
                             ToastHeader.classList.add("toast-header");
                             let ToastTitle = document.createElement("strong");
                             ToastTitle.classList.add("me-auto");
-                            ToastTitle.innerHTML = "提醒";
+                            ToastTitle.innerHTML = "提醒：有人@你";
                             ToastHeader.appendChild(ToastTitle);
                             let ToastTime = document.createElement("small");
                             ToastTime.classList.add("text-body-secondary");
@@ -839,7 +837,7 @@ else {
                             ToastHeader.classList.add("toast-header");
                             let ToastTitle = document.createElement("strong");
                             ToastTitle.classList.add("me-auto");
-                            ToastTitle.innerHTML = "提醒";
+                            ToastTitle.innerHTML = "提醒：有新消息";
                             ToastHeader.appendChild(ToastTitle);
                             let ToastTime = document.createElement("small");
                             ToastTime.classList.add("text-body-secondary");
@@ -901,7 +899,7 @@ else {
                 Alert.classList.add("alert");
                 Alert.classList.add("alert-primary");
                 Alert.role = "alert";
-                Alert.innerHTML = `欢迎使用XMOJ增强脚本！点击
+                Alert.innerHTML = `欢迎您使用XMOJ增强脚本！点击
                 <a class="alert-link" href="http://www.xmoj.tech/modifypage.php?ByUserScript=1" target="_blank">此处</a>
                 查看更新日志。`;
                 Container.appendChild(Alert);
@@ -910,7 +908,7 @@ else {
                 UtilitiesCard.classList.add("mb-3");
                 let UtilitiesCardHeader = document.createElement("div");
                 UtilitiesCardHeader.classList.add("card-header");
-                UtilitiesCardHeader.innerText = "功能列表";
+                UtilitiesCardHeader.innerText = "XMOJ增强脚本功能列表";
                 UtilitiesCard.appendChild(UtilitiesCardHeader);
                 let UtilitiesCardBody = document.createElement("div");
                 UtilitiesCardBody.classList.add("card-body");
@@ -996,7 +994,7 @@ else {
                             { "ID": "Translate", "Type": "F", "Name": "统一使用中文，翻译了部分英文*" },
                             { "ID": "ReplaceLinks", "Type": "F", "Name": "将网站中所有以方括号包装的链接替换为按钮" },
                             { "ID": "RemoveUseless", "Type": "D", "Name": "删去无法使用的功能*" },
-                            { "ID": "ReplaceXM", "Type": "F", "Name": "将网站中所有“小明”和“我”关键字替换为“高老师”，所有“小红”替换为“低老师”，所有“下海”、“海上”替换为“上海”" }
+                            { "ID": "ReplaceXM", "Type": "F", "Name": "将网站中所有“小明”和“我”关键字替换为“高老师”，所有“小红”替换为“徐师娘”，所有“小粉”替换为“彩虹”，所有“下海”、“海上”替换为“上海”" }
                         ]
                     },
                     { "ID": "AutoLogin", "Type": "A", "Name": "在需要登录的界面自动跳转到登陆界面" },
@@ -1142,6 +1140,7 @@ else {
                     Temp[i].parentElement.className = "card";
                 }
                 if (UtilityEnabled("RemoveUseless")) {
+                    document.querySelector("h2.lang_en").remove();
                     document.getElementsByTagName("center")[1].remove();
                 }
                 if (UtilityEnabled("CopySamples")) {
@@ -1160,7 +1159,7 @@ else {
                         setTimeout(() => {
                             $(".copy-btn").text("复制").removeClass("done");
                         }, 1000);
-                        document.body.removeChild(textarea[0]);
+                        //document.body.removeChild(textarea[0]);
                     });
                 }
                 let IOFileElement = document.querySelector("body > div > div.mt-3 > center > h3");
@@ -1326,7 +1325,7 @@ else {
                     let ImproveACRateButton = document.createElement("button");
                     document.querySelector("body > div.container > div > div.input-append").appendChild(ImproveACRateButton);
                     ImproveACRateButton.className = "btn btn-outline-secondary";
-                    ImproveACRateButton.innerText = "提高AC率";
+                    ImproveACRateButton.innerText = "提高正确率";
                     ImproveACRateButton.disabled = true;
                     let ACProblems = [];
                     await fetch("http://www.xmoj.tech/userinfo.php?user=" + CurrentUsername)
@@ -2086,7 +2085,7 @@ else {
                 let DownloadButton = document.createElement("button");
                 document.querySelector("body > div.container > div > center").insertBefore(DownloadButton, document.querySelector("body > div.container > div > center > a"));
                 DownloadButton.className = "btn btn-outline-secondary";
-                DownloadButton.innerText = "下载排名";
+                DownloadButton.innerText = "下载ACM排名";
                 DownloadButton.style.marginBottom = "20px";
                 DownloadButton.addEventListener("click", () => {
                     location.href = "http://www.xmoj.tech/contestrank.xls.php?cid=" + SearchParams.get("cid");
@@ -2449,7 +2448,7 @@ else {
                     <div class="col-9"><input type="password" id="NewPassword" class="form-control"></div>
                 </div>
                 <div class="row g-2 align-items-center col-6 mb-1">
-                    <div class="col-3"><label for="NewPasswordAgain" class="col-form-label">重复密码</label></div>
+                    <div class="col-3"><label for="NewPasswordAgain" class="col-form-label">请重复密码</label></div>
                     <div class="col-9"><input type="password" id="NewPasswordAgain" class="form-control"></div>
                 </div>
                 <div class="row g-2 align-items-center col-6 mb-1">
@@ -2481,7 +2480,7 @@ else {
                     <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="display: none"></span>
                 </button>
                 <div class="alert alert-danger mb-3" role="alert" id="ErrorElement" style="display: none;"></div>
-                <div class="alert alert-success mb-3" role="alert" id="SuccessElement" style="display: none;">修改成功（修改Badge请向管理组提出申请）</div>
+                <div class="alert alert-success mb-3" role="alert" id="SuccessElement" style="display: none;">修改成功</div>
                 <br>`;
                 document.getElementById("Nickname").value = Nickname;
                 document.getElementById("School").value = School;
@@ -2703,7 +2702,7 @@ else {
                 </div>
                 <p class="mt-2 text-muted">
                     您必须要上传标程以后才能使用“查看标程”功能。点击“上传标程”按钮以后，系统会自动上传标程，请您耐心等待。<br>
-                    首次上传标程可能会比较慢，请耐心等待。后续上传标程将会快很多。<br>
+                    首次上传标程可能会比较慢，请耐心等待。后续上传标程将会快很多。请不要直接抄袭或递交标程，否则会给予"作弊者"badge的惩罚！<br>
                     上传的内容不是您AC的程序，而是您AC的题目对应的用户std的程序。所以您可以放心上传，不会泄露您的代码。<br>
                     系统每过30天会自动提醒您上传标程，您必须要上传标程，否则将会被禁止使用“查看标程”功能。<br>
                 </p>`;
@@ -3509,7 +3508,7 @@ int main()
                     AddUser.disabled = true;
                     RequestAPI("SendMail", {
                         "ToUser": String(UsernameData),
-                        "Content": String("你好，我是" + localStorage.getItem("UserScript-Username"))
+                        "Content": String("您好，我是" + localStorage.getItem("UserScript-Username"))
                     }, (ResponseData) => {
                         AddUser.children[0].style.display = "none";
                         AddUser.disabled = false;
@@ -3832,7 +3831,7 @@ int main()
                                             "Image": Reader.result
                                         }, (ResponseData) => {
                                             if (ResponseData.Success) {
-                                                ContentElement.value = Before + `![](https://api.xmoj-bbs.tech/GetImage?ImageID=${ResponseData.Data.ImageID})` + After;
+                                                ContentElement.value = Before + `![](https://assets.xmoj-bbs.tech/GetImage?ImageID=${ResponseData.Data.ImageID})` + After;
                                                 ContentElement.dispatchEvent(new Event("input"));
                                             }
                                             else {
@@ -4009,7 +4008,7 @@ int main()
                                                 "Image": Reader.result
                                             }, (ResponseData) => {
                                                 if (ResponseData.Success) {
-                                                    ContentElement.value = Before + `![](https://api.xmoj-bbs.tech/GetImage?ImageID=${ResponseData.Data.ImageID})` + After;
+                                                    ContentElement.value = Before + `![](https://assets.xmoj-bbs.tech/GetImage?ImageID=${ResponseData.Data.ImageID})` + After;
                                                     ContentElement.dispatchEvent(new Event("input"));
                                                 }
                                                 else {
@@ -4243,7 +4242,7 @@ int main()
                                                                 "Image": Reader.result
                                                             }, (ResponseData) => {
                                                                 if (ResponseData.Success) {
-                                                                    ContentEditor.value = Before + `![](https://api.xmoj-bbs.tech/GetImage?ImageID=${ResponseData.Data.ImageID})` + After;
+                                                                    ContentEditor.value = Before + `![](https://assets.xmoj-bbs.tech/GetImage?ImageID=${ResponseData.Data.ImageID})` + After;
                                                                     ContentEditor.dispatchEvent(new Event("input"));
                                                                 }
                                                                 else {
